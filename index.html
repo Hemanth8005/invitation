@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f0e5">
+  <title>Hemanth Raj &amp; Malavika | Wedding Invitation</title>
+  <meta name="description" content="Join us as we celebrate our wedding and begin our forever — 26 November 2026.">
+  <meta property="og:type" content="website"><meta property="og:title" content="Hemanth Raj &amp; Malavika | Wedding Invitation"><meta property="og:description" content="Join us as we celebrate our wedding and begin our forever — 26 November 2026."><meta property="og:image" content="assets/temple-couple.webp"><meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script defer src="data.js"></script><script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <audio id="music" loop preload="none"></audio>
+  <div class="scroll-effects" id="scrollEffects" aria-hidden="true"></div>
+  <button class="music-toggle" id="musicToggle" aria-label="Play background music" aria-pressed="false"><span class="music-icon">♫</span><span class="music-label">Music off</span></button><button class="mute-toggle" id="muteToggle" aria-label="Mute music" aria-pressed="false" hidden>Mute</button>
+  <main>
+    <section class="cover" id="cover" aria-label="Wedding invitation cover">
+      <div class="cover-heading"><span class="cover-sun">✳</span><p class="eyebrow">Our wedding invitation</p></div>
+      <div class="envelope-stage">
+        <article class="invitation-letter"><img data-asset="cover" alt="A childhood photograph of Hemanth and Malavika with the words We are getting married"><div class="letter-copy"><span class="eyebrow">Together with our families</span><h1><span id="coverGroom"></span><i>&amp;</i><span id="coverBride"></span></h1><p><span id="coverDate"></span> · Guruvayur</p></div></article>
+        <div class="envelope-back"></div><div class="envelope-front"><div class="envelope-monogram">H <i>&amp;</i> M</div><span class="envelope-date" id="envelopeDate"></span></div>
+        <div class="envelope-flap"></div><div class="envelope-seal" aria-hidden="true">✳</div>
+      </div>
+      <button id="openInvite" class="open-button"><span>Tap to open</span><i>↓</i></button>
+    </section>
+    <div id="invitation" class="invitation" aria-hidden="true">
+      <nav class="mini-nav"><a href="#story" aria-label="Back to beginning">H <span>&amp;</span> M</a><span>26 · 11 · 2026</span></nav>
+      <section class="story section-pad" id="story"><div class="ornament">❧</div><p class="eyebrow wine-text">With joyful hearts</p><h2>Two hearts,<br><em>one beautiful beginning.</em></h2><p class="lead" data-copy="tagline"></p><div class="fine-rule"><span>✦</span></div><a class="scroll-hint" href="#families">Scroll to explore <span>↓</span></a></section>
+      <section class="families section-pad" id="families"><div class="section-heading"><p class="eyebrow">Together with our families</p><h2>We invite you<br>to celebrate <em>love.</em></h2><p class="body-copy" data-copy="welcome"></p></div><div class="name-pair"><article><p class="parents" data-parent="bride"></p><h3 data-name="brideFull"></h3><span class="ampersand">&amp;</span></article><article><p class="parents" data-parent="groom"></p><h3 data-name="groomFull"></h3></article></div></section>
+      <section class="reveal-date section-pad" id="revealDate"><div class="date-card"><span class="eyebrow">A little anticipation</span><h2>A special date<br><em>awaits...</em></h2><p class="scratch-hint">Scratch or tap to uncover</p><div class="scratch-wrap"><div class="date-under"><span>Save the date</span><strong id="revealDateText"></strong><i>✦</i></div><canvas id="scratch" aria-label="Scratch to reveal the wedding date. You can also tap to reveal it."></canvas><button class="reveal-fallback" id="revealFallback">Reveal date</button></div></div><div class="petals" aria-hidden="true"></div></section>
+      <section class="countdown section-pad"><p class="eyebrow">Our day is almost here</p><h2>Counting down<br><em>to forever.</em></h2><div class="timer" id="timer" aria-live="polite"></div></section>
+      <section class="muhurtham section-pad" id="muhurtham"><div class="temple-mark">⌂</div><p class="eyebrow">The auspicious moment</p><h2>Muhurtham</h2><div class="gold-line"></div><p class="date-large" id="weddingDate"></p><p class="day-label"><span id="weddingDay"></span> <span>·</span> <span id="weddingTime"></span></p><div class="place"><span id="weddingVenue"></span><small id="weddingLocation"></small></div><p class="body-copy after-copy" data-copy="after"></p></section>
+      <section class="location section-pad"><div class="location-photo"></div><div class="location-card"><p class="eyebrow">Find your way</p><h2 id="mapVenue"></h2><p id="mapLocation"></p><div class="qr" data-qr="wedding" aria-label="QR code for Guruvayur Temple map"></div><a class="map-link" data-map="wedding" target="_blank" rel="noreferrer">Open in Google Maps <span>↗</span></a><a class="continue-hint" href="#gallery">Scroll till the end for more info <span>↓</span></a></div></section>
+      <section class="gallery section-pad"><div class="gallery-head"><p class="eyebrow">A glimpse of our story</p><h2>Moments that<br><em>feel like home.</em></h2></div><div class="gallery-grid"><figure class="photo photo-wide"><img data-asset="portrait" alt="Hemanth and Malavika sharing a joyful moment in their wedding attire" loading="lazy"><figcaption>Our beginning</figcaption></figure><figure class="photo photo-tall"><img data-asset="hands" alt="The couple's hands together, adorned with wedding henna and rings" loading="lazy"><figcaption>A promise, held close</figcaption></figure><figure class="photo photo-note photo-picnic"><img data-asset="galleryMoment" alt="A collage showing a page from the couple's scrapbook beside a picnic moment together" loading="lazy"><figcaption>Little pieces of forever</figcaption></figure></div></section>
+      <section class="receptions section-pad" id="receptions"><p class="eyebrow">We host two receptions</p><h2>Celebrate <em>with us.</em></h2><div class="reception-grid" id="receptionGrid"></div></section>
+      <section class="closing section-pad"><div class="closing-glow"></div><div class="ornament">✳</div><p class="eyebrow">With love,</p><h2 id="closingNames"></h2><p class="closing-date"><span id="closingDate"></span></p><p class="body-copy" data-copy="closing"></p><div class="fine-rule"><span>✦</span></div><small>We look forward to celebrating with you</small></section>
+      <footer><span id="footerNames"></span><span>Made with love · 2026</span></footer>
+    </div>
+  </main>
+</body></html>
